@@ -8,7 +8,7 @@ Imagine I’m building a logistics app. At first, I only support trucks, so ever
 
 But then I want to support ships too. Now the issue is that my code is tightly tied to `Truck`. If I add `Ship`, I have to go back and modify a bunch of existing code. And if I keep adding more transport types later, it turns into a mess of `if/else` or `switch` statements everywhere.
 
-So the core problem is:*object creation is too tightly coupled to specific classes, which makes the system hard to extend.
+So the core problem is: object creation is too tightly coupled to specific classes, which makes the system hard to extend.
 
 ---
 
