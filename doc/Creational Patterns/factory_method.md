@@ -15,7 +15,7 @@ So the core problem is: object creation is too tightly coupled to specific class
 
 ### The idea behind the solution
 
-Instead of creating objects directly, I move that logic into a separate method—the factory method.
+Instead of creating objects directly, I move that logic into a separate method aka the factory method.
 
 So rather than writing something like:
 
@@ -34,7 +34,7 @@ Then in subclasses, I can override `createTransport()`:
 * one subclass returns `Truck`
 * another returns `Ship`
 
-The key point is that all these objects share a common interface (like `Transport`), so the rest of the code doesn’t care what exact type it gets—it just knows it can call something like `deliver()`.
+The key point is that all these objects share a common interface (like `Transport`), so the rest of the code doesn’t care what exact type it gets. Iit just knows it can call something like `deliver()`.
 
 ---
 
@@ -101,6 +101,6 @@ It’s also useful when I want to reuse objects (like pooling), since the factor
 
 ---
 
-### Big picture
+### Conclusion
 
 I see Factory Method as a cleaner way to delegate object creation. Instead of hardcoding everything, I let subclasses decide what to create, while the main logic just works with a common interface.
